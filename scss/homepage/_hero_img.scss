@@ -1,0 +1,73 @@
+@use '../globals/' as *;
+@use '../breakpoints/' as *;
+
+
+// RIGHT SECTION
+.rightsegment{
+    
+    padding: 30px 50px;
+    
+    
+    text-align: center;
+    h2{
+        text-align: left;
+        margin: auto;
+        width: 280px;
+        font-weight: $fontweight-regular;
+        margin-bottom: 40px;
+        .design, .life {
+            font-weight: $fontweight-semibold;
+        }
+    }
+
+}
+// TEST SECTION
+
+.testsectionright{
+    @include devices(mobile) {
+        margin: 0 auto;
+        width: 20rem;
+        height: 20rem;
+    }
+    @include bgcolour;
+   @include testbgimg;
+   webkit-animation: morph 8s ease-in-out infinite;
+    animation: morph 8s ease-in-out infinite;
+border: 3px solid #2d2e32;
+border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+height: 25rem;
+position: relative;
+transition: all 1s ease-in-out;
+width: 25rem;
+    
+}
+
+.floating-lang{
+    animation: rotate 5s linear infinite;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 6rem;
+    .leftseg-flimgs {
+        display: grid;
+            grid-template-columns: auto;
+            row-gap: 100px;
+            padding-top: 60px;
+            
+        img{
+            
+            width: 50px;
+        
+    }
+}
+    .rightseg-flimgs {
+        display: grid;
+      
+            grid-template-columns: auto;
+            row-gap: 50px;
+        img{
+            width: 50px;
+        
+    }
+    }
+}

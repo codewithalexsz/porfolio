@@ -1,0 +1,37 @@
+@use '../globals/' as *;
+
+
+
+// FOOTER SECTION
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $background-colour-black;
+    color: white;
+    padding: 30px 80px;
+}
+.footc1 {
+    align-items: center;
+    img {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+    .logotxt{
+        background-color: yellow;
+        color: $text-colour-black;
+        padding: 10px 15px;
+        font-weight: $fontweight-semibold;
+    }
+}
+
+.footc2{
+    .navs {
+        display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a{
+        color: white;
+    }
+    }
+}
+

@@ -1,0 +1,57 @@
+@use '../globals/' as *;
+
+
+
+.main-overview{
+    margin-bottom: 70px;
+}
+
+.profile-sec{
+    width: 100%;
+display: flex;
+flex-direction: column;
+padding: 0 3px;
+.background-header{
+    background-color:rgb(227, 192, 223) ;
+    height: 30vh;
+    display: flex;
+}
+.namebio img {
+    width: 130px;
+    height: 130px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    position: absolute;
+    top: 42%;
+    left: 4%;
+.profile-bio{
+    display: flex;
+    justify-content: space-between;
+    
+    .namebio{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 50px;
+        
+    }
+}
+}
+}
+.name-pro-sec{
+    padding: 10px 50px;
+}
+.testout{
+    .name {
+        font-size: $fontsize-subheader;
+        font-weight: $fontweight-semibold;
+    }
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+    align-items: center;
+    .downloadcv{
+        padding: 5px 10px;
+        background-color: transparent;
+        border: 1px solid grey;
+    }
+}

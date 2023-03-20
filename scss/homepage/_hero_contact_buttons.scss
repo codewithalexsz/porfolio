@@ -1,0 +1,117 @@
+@use '../globals/' as *;
+
+
+.landingbuttons{
+    margin: 40px 0;
+}
+.hireme:hover {
+        background-color: hsl(235, 100%, 67%);
+        padding: 7px 30px;
+        border-radius:1.5rem ;
+        -webkit-border-radius:1.5rem ;
+        -moz-border-radius:1.5rem ;
+        -ms-border-radius:1.5rem ;
+        -o-border-radius:1.5rem ;
+}
+.hireme {
+    background-color: hsla(235, 57%, 51%, 0.753);
+    padding: 5px 25px;
+    color: white;
+    border-style: none;
+    border-radius: 1.4rem;
+    font-size: $fontsize-regular;
+    margin-right: 20px;
+    -webkit-border-radius: 1.4rem;
+    -moz-border-radius: 1.4rem;
+    -ms-border-radius: 1.4rem;
+    -o-border-radius: 1.4rem;
+}
+.overview {
+    color: $text-colour-black;
+    font-weight: 700;
+}
+// SOCIALS BUTTONS
+.socials {
+
+    padding: 2rem;
+    background-color: #fff;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.075);
+    }
+    
+    .link {
+    display: inline-flex; cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    border-radius: 99em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transform-origin: center left;
+    transition: width 0.2s ease-in;
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    
+    .link:before
+     {
+            position: absolute;
+            z-index: -1;
+            content:"";
+            display: block;
+            border-radius: 99em;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            transform: translateX(100);
+            transition: transform 0.2;
+            transform-origin: center;
+            background-color: #eee;
+    } 
+    
+    .link:hover, .link:focus {
+        outline: 0;
+        width: 140px;
+    }
+    
+    .link:hover:before, .link:hover .link-title {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+    
+    .link-icon{
+        color: grey;
+        font-size: 27px !important;
+        display: block;
+        flex-shrink: 0;
+        left: 18px;
+        position: absolute;
+    }
+    
+    .link-title{
+        color: rgb(161, 114, 52);
+        transform: translateX(100%);
+        transition: transform 0.2s ease-in;
+        display: block;
+        text-align: center;
+        text-indent: 20px;
+        width: 100%;
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        -webkit-transition: transform 0.2s ease-in;
+        -moz-transition: transform 0.2s ease-in;
+        -ms-transition: transform 0.2s ease-in;
+        -o-transition: transform 0.2s ease-in;
+    }

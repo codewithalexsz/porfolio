@@ -1,0 +1,52 @@
+
+@use '../globals/' as *;
+@use '../breakpoints/' as *;
+
+// Main SECTION
+.main-index {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    // RESPOSIVE MEDIA QUERIES {mobile}
+    @include devices(mobile) {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1rem;
+        h1{
+            margin: 0 auto;
+        }
+        p{
+            margin: 10px auto;
+        }
+    }
+    // RESPONIVE TABLET
+    @include devices(tablet) {
+        gap: 2rem;
+    }
+
+
+    @include herobg;
+    .leftsegment {
+        padding: 40px 2rem;
+        h1 {
+            width: 320px;
+            margin: 0;
+            span {
+                background-color: $background-colour-blue;
+                font-size: $fontsize-regular;
+                padding:5px 20px;
+                margin-left: 5px;
+                color: white;
+                border-radius: $border-radius-button;
+                -webkit-border-radius: $border-radius-button;
+                -moz-border-radius: $border-radius-button;
+                -ms-border-radius: $border-radius-button;
+                -o-border-radius: $border-radius-button;
+}
+        }
+        p{
+            font-size: $fontsize-regular;
+            width: 350px;
+        }
+    }
+}

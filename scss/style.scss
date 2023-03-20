@@ -1,0 +1,35 @@
+@use 'breakpoints';
+@use 'globals';
+@use 'homepage';
+@use 'overview';
+
+p{
+    margin-top: 0;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    li{
+        list-style: none;
+    }
+
+}
+
+
+
