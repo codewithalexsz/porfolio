@@ -1,4 +1,6 @@
 @use '../globals/' as *;
+@use '../breakpoints/' as *;
+
 
 
 
@@ -12,11 +14,26 @@ display: flex;
 flex-direction: column;
 padding: 0 3px;
 .background-header{
+    // RESPONSIVE QUERY
+    @include devices (tablet) {
+        height: 15vh;
+    }
     background-color:rgb(227, 192, 223) ;
     height: 30vh;
     display: flex;
 }
 .namebio img {
+    // RESPONSIVENESS QUERY
+
+    @include devices (tablet) {
+        width: 110px;
+    height: 110px;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    position: absolute;
+    top: 21.9%;
+    left: 4%;
+    }
     width: 130px;
     height: 130px;
     border: 5px solid rgb(255, 255, 255);
@@ -52,6 +69,11 @@ padding: 0 3px;
     .downloadcv{
         padding: 5px 10px;
         background-color: transparent;
-        border: 1px solid grey;
+        border: 1.5px solid white;
+            border-radius: 0.3rem;
+            -webkit-border-radius: 0.3rem;
+            -moz-border-radius: 0.3rem;
+            -ms-border-radius: 0.3rem;
+            -o-border-radius: 0.3rem;
     }
 }

@@ -36,3 +36,7 @@ transform: rotate(1turn);
 @mixin bgcolour {
     background-color: #7177b1
 }
+
+@mixin bgcolour-white {
+  background-color: white;
+}

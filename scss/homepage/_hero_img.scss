@@ -24,11 +24,19 @@
 // TEST SECTION
 
 .testsectionright{
+    // REPSONSIVE QUERIES
     @include devices(mobile) {
         margin: 0 auto;
         width: 20rem;
         height: 20rem;
     }
+    @include devices (tablet) {
+        margin: 0 auto;
+        width: 18rem;
+        height: 18rem;
+    }
+
+
     @include bgcolour;
    @include testbgimg;
    webkit-animation: morph 8s ease-in-out infinite;

@@ -1,0 +1,7 @@
+@use '../globals/' as *;
+@use '../breakpoints/' as *;
+
+.overview-body{
+ 
+    @include herobg;
+}

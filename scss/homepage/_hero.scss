@@ -12,16 +12,11 @@
         flex-direction: column-reverse;
         text-align: center;
         gap: 1rem;
-        h1{
-            margin: 0 auto;
-        }
-        p{
-            margin: 10px auto;
-        }
+        
     }
     // RESPONIVE TABLET
     @include devices(tablet) {
-        gap: 2rem;
+        gap: 0rem;
     }
 
 
@@ -30,7 +25,7 @@
         padding: 40px 2rem;
         h1 {
             width: 320px;
-            margin: 0;
+            margin: 0 auto;
             span {
                 background-color: $background-colour-blue;
                 font-size: $fontsize-regular;
@@ -47,6 +42,7 @@
         p{
             font-size: $fontsize-regular;
             width: 350px;
+            margin: 0 auto;
         }
     }
 }
