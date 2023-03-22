@@ -1,4 +1,5 @@
 @use '../globals/' as *;
+@use '../breakpoints/' as *;
 
 
 
@@ -7,8 +8,21 @@
     display: flex;
     padding: 50px 30px;
     gap: 100px;
+
+    // RESPONSIVE QUERY
+    @include devices (mobile) {
+        flex-direction: column;
+        padding: 50px 15px;
+        gap: 10px;
+        text-align: center;
+        .sec-title{
+            font-size: $fontsize-subheader;
+        }
+    }
     .sec-title{
        min-width: fit-content;
+       font-size: large;
+       font-weight: $fontweight-semibold;
     }
 }
 .aboutme-desc{
@@ -33,6 +47,38 @@
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 30px;
+
+    // RESPONSIVE QUERY
+    @include devices (mobile) {
+        .contact-card{
+            display: grid;
+            background-color: rgba(200, 182, 236, 0.644);
+            padding: 5px 20px;
+            border-radius: 0.3rem;
+            align-content: center;
+            .ccard-info img{
+                width: 17px;
+                margin-right: 5px;
+            }
+        }
+    .ccard-title{
+        color: purple;
+        font-weight: $fontweight-semibold;
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    .ccard-info{
+        color: rgba(160, 26, 160, 0.822);
+        font-weight: 600;
+        display: flex;
+        align-content: center;
+        font-size: 10px;
+    }
+    
+    }
+
+    }
+
     .contact-card{
         display: grid;
         background-color: rgba(200, 182, 236, 0.644);
@@ -45,7 +91,7 @@
             
         }
 }
-}
+
 
 .ccard-title{
     color: purple;

@@ -1,4 +1,5 @@
 @use '../globals/' as *;
+@use '../breakpoints/' as *;
 
 
 
@@ -9,6 +10,14 @@
     justify-content: center;
     gap: 5px;
     margin-bottom: 50px;
+
+    // RESPONSE QUERY
+    @include devices (mobile) {
+        flex-direction: column;
+        .skills-sect{
+            max-width: 100%;
+        }
+    }
     
 }
 .skills-sect{
@@ -17,6 +26,11 @@
    max-width: 50%;
     padding: 40px;
     .skill-title {
+        // RESPONSIVE QUERY
+        @include devices (tablet) {
+            font-size: 2rem;
+        }
+        
         display: flex;
         font-size: 2.8rem;
         font-weight: $fontweight-semibold;
@@ -26,14 +40,14 @@
     }
     .skillsect-desc{
         font-size: x-small;
-        padding-left: 30px;
-        padding-top: 20px;
+        padding-left: 15px;
+        padding-top: 10px;
         border-top-left-radius: 0.5rem;
         border-left: 2px solid rgb(72, 201, 104);
-        width: 23rem;
+        
         line-height: 1rem;
-        margin-bottom: 70px;
-        margin-left: 20px;
+        margin-bottom: 50px;
+        
     }
 }
 .skills-tools{
@@ -42,6 +56,9 @@
     width: fit-content;
     
     .skills{
+        @include devices (tablet) {
+            font-size: 1.8rem;
+        }
         font-size: 2.4rem;
         font-weight: 600;
         margin-bottom: 30px;
@@ -64,8 +81,11 @@
     }
 }
 .toolicon{
-    width: 60px;
+    
     img{
+        @include devices (tablet) {
+            width: 45px;
+        }
         width: 60px;
         
     }

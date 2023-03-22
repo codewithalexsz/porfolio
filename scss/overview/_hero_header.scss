@@ -6,6 +6,9 @@
 
 .main-overview{
     margin-bottom: 70px;
+    @include devices (mobile) {
+        margin-bottom: 40px;
+    }
 }
 
 .profile-sec{
@@ -13,15 +16,24 @@
 display: flex;
 flex-direction: column;
 padding: 0 3px;
-.background-header{
+
+
+.background-header {
     // RESPONSIVE QUERY
     @include devices (tablet) {
         height: 15vh;
     }
+    @include devices (mobile) {
+        height: 13vh;
+    }
+
+
     background-color:rgb(227, 192, 223) ;
     height: 30vh;
     display: flex;
 }
+
+
 .namebio img {
     // RESPONSIVENESS QUERY
 
@@ -34,6 +46,13 @@ padding: 0 3px;
     top: 21.9%;
     left: 4%;
     }
+
+    @include devices (mobile) {
+        width: 85px;
+        height: 85px;
+        top: 19%;
+        
+    }
     width: 130px;
     height: 130px;
     border: 5px solid rgb(255, 255, 255);
@@ -42,30 +61,49 @@ padding: 0 3px;
     top: 42%;
     left: 4%;
 .profile-bio{
-    display: flex;
-    justify-content: space-between;
+    
     
     .namebio{
-        display: flex;
-        justify-content: space-between;
-        padding: 15px 50px;
+        
+        @include devices (mobile){
+            
+            
+        }
         
     }
 }
 }
 }
 .name-pro-sec{
-    padding: 10px 50px;
+    
 }
 .testout{
-    .name {
-        font-size: $fontsize-subheader;
-        font-weight: $fontweight-semibold;
-    }
     display: flex;
     justify-content: space-between;
     padding: 0 10rem;
     align-items: center;
+
+    // RESPONSIVE QUERIES
+    @include devices (mobile) {
+        display: flex;
+    justify-content: space-evenly;
+    padding:  10px 0;
+    padding-left: 4.5rem;
+    align-content: center;
+        .name {
+            font-size: 1rem !important;
+        }
+        .biodesc{
+            font-size: 13px;
+            color: $text-colour-grey;
+        }
+    }
+
+    .name {
+        font-size: $fontsize-subheader;
+        font-weight: $fontweight-semibold;
+    }
+    
     .downloadcv{
         padding: 5px 10px;
         background-color: transparent;

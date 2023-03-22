@@ -3,6 +3,32 @@
 
 .overview-body {
     .header {
+        @include devices (mobile) {
+            padding:8px 10px ;
+            img{
+                width: 28px;
+                margin: 0;
+            }
+            ul{
+                display: flex;
+                gap: 15px;
+                
+                li{
+                    a {
+                        color: $text-colour-black;
+                        font-size: small;
+                        width: max-content;
+                    }
+                }
+            
+            }
+            .header-btn {
+                font-size: 0.7rem;
+                width: 97px;
+                padding: 8px 0;
+            }
+        }
+        
         .header-btn{
             border: 1.5px solid white;
             border-radius: 0.3rem;
