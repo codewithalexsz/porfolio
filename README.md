@@ -1,4 +1,4 @@
-Alex.Dev Portfolio Website
+# Alex.Dev Portfolio Website
 
 This is the repo of my portfolio website ,showcasing my skills, projects and experiences.
 
@@ -7,11 +7,8 @@ Technologies Used
 
 I  Built my portfolio website using the following technologies:
 
-   + HTML
-   + CSS
-   + SASS
-   + JavaScript
-   + Bootstrap framework
+   
+  
 
 Features
 
@@ -33,6 +30,9 @@ To run this project locally, follow these steps:
 Usage
 
 This portfolio website is designed to showcase my skills, projects and experiences. Users can browse the website to learn more about the me and my work.
+
+
+![Screenshot (24)](https://user-images.githubusercontent.com/55211588/227335392-0009bc6b-d2cc-4347-b1e0-f824853326e5.png)
 
 
 Credits
