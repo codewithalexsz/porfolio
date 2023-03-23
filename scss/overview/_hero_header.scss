@@ -79,8 +79,9 @@ padding: 0 3px;
 }
 .testout{
     display: flex;
-    justify-content: space-between;
-    padding: 0 10rem;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    
     align-items: center;
 
     // RESPONSIVE QUERIES

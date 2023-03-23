@@ -1,108 +1,71 @@
+$slide-width: 400px;
+$slide-height: 200px;
 
-
-
-
-@import url("https://fonts.googleapis.com/css?family=Inter:wght@300;400; 500;600;700; 800;900&display-swap");
-*:after, *:before {
-    margin: 0;
-box-sizing: border-box;
+#slider {
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #c69;
 }
 
+.slide {
+  width: $slide-width;
+  height: $slide-height;
+  float: left;
+  position: relative;
+}
 
+#slide-holder {
+  // wide enough to fit all the slides
+  width: 400%;
+  position: relative;
+  left: 0;
+  animation: scroller 10s infinite;
+}
 
+// need a step for each slide
+@keyframes scroller {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-400px);
+    -webkit-transform: translateX(-400px);
+    -moz-transform: translateX(-400px);
+    -ms-transform: translateX(-400px);
+    -o-transform: translateX(-400px);
+}
+  66% {
+    transform: translateX(-400px * 2);
+    -webkit-transform: translateX(-400px * 2);
+    -moz-transform: translateX(-400px * 2);
+    -ms-transform: translateX(-400px * 2);
+    -o-transform: translateX(-400px * 2);
+}
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// additional styling
 body {
-
-font-family: "Inter", sans-serif
-line-height: 1.5;
-min-height: 100vh;
-display: flex; align-items: center;
-justify-content: center;
-background-color: pink;
+  font-family: sans-serif;
 }
 
-.socials {
-
-padding: 2rem;
-background-color: #fff;
-position: relative;
-width: calc(130px +4 70px + 4rem); display: flex;
-justify-content: center;
-border-radius: 20px 20px;
-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.075);
+#slider {
+  margin: 0 auto;
 }
 
-.link {
-display: inline-flex; cursor: pointer;
-justify-content: center;
-align-items: center;
-width: 70px;
-height: 50px;
-border-radius: 99em;
-position: relative;
-z-index: 1;
-overflow: hidden;
-transform-origin: center left;
-transition: width 0.2s ease-in;
-text-decoration: none;
-color: inherit;
+// in case images break:
+
+.slide:nth-child(1) {
+  background: #c69;
 }
 
-
-.link:before
- {
-        position: absolute;
-        z-index: -1;
-        content:"";
-        display: block;
-        border-radius: 99em;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        transform: translateX(100);
-        transition: transform 0.2;
-        transform-origin: center;
-        background-color: #eee;
-} 
-
-.link:hover, .link:focus {
-    outline: 0;
-    width: 140px;
+.slide:nth-child(2) {
+  background: wheat;
 }
 
-.link:hover:before, .link:hover .link-title {
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
+.slide:nth-child(3) {
+  background: #eee;
 }
-
-.link-icon{
-    color: grey;
-    font-size: 27px !important;
-    display: block;
-    flex-shrink: 0;
-    left: 18px;
-    position: absolute;
-}
-
-.link-title{
-    color: rgb(161, 114, 52);
-    transform: translateX(100%);
-    transition: transform 0.2s ease-in;
-    display: block;
-    text-align: center;
-    text-indent: 20px;
-    width: 100%;
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
-    -webkit-transition: transform 0.2s ease-in;
-    -moz-transition: transform 0.2s ease-in;
-    -ms-transition: transform 0.2s ease-in;
-    -o-transition: transform 0.2s ease-in;
-}
-
-}
-

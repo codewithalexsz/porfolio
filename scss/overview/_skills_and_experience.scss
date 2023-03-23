@@ -69,6 +69,10 @@
         row-gap: 40px;
         width: 85%;
         max-width: 85%;
+        @include devices (mobile) {
+            width: 100%;
+            max-width: 100%;
+        }
     }
     .tool-card{
        

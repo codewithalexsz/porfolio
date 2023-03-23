@@ -1,17 +1,49 @@
 @use '../globals/' as *;
+@use '../breakpoints/' as *;
 
 
 
 // FOOTER SECTION
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: $background-colour-black;
     color: white;
     padding: 30px 80px;
+    align-items: center;
+
+    // RESPONSIVE QUERY
+@include devices (mobile) {
+    padding: 15px 10px;
+    .footc1 {
+        
+        justify-items: center;
+        img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        .logotxt{
+            background-color: yellow;
+            color: $text-colour-black;
+            padding: 10px 15px;
+            font-weight: $fontweight-semibold;
+        }
+    }
+    
+    .license-footer{
+       font-size: 16px;
+       font-weight: $fontweight-semibold;
+    }
 }
+
+}
+
+//
+
 .footc1 {
     align-items: center;
+    display: flex;
+    flex-direction: column;
     img {
         width: 80px;
         margin-bottom: 20px;
@@ -24,14 +56,8 @@
     }
 }
 
-.footc2{
-    .navs {
-        display: flex;
-    flex-direction: column;
-    gap: 20px;
-    a{
-        color: white;
-    }
-    }
+.license-footer{
+   font-size: $fontsize-subheader;
+   font-weight: $fontweight-semibold;
 }
 
