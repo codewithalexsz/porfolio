@@ -1,71 +1,134 @@
-$slide-width: 400px;
-$slide-height: 200px;
-
-#slider {
-  width: 400px;
-  height: 200px;
-  overflow: hidden;
-  border: 1px solid #c69;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.slide {
-  width: $slide-width;
-  height: $slide-height;
-  float: left;
-  position: relative;
-}
-
-#slide-holder {
-  // wide enough to fit all the slides
-  width: 400%;
-  position: relative;
-  left: 0;
-  animation: scroller 10s infinite;
-}
-
-// need a step for each slide
-@keyframes scroller {
-  0% {
-    transform: translateX(0);
-  }
-  33% {
-    transform: translateX(-400px);
-    -webkit-transform: translateX(-400px);
-    -moz-transform: translateX(-400px);
-    -ms-transform: translateX(-400px);
-    -o-transform: translateX(-400px);
-}
-  66% {
-    transform: translateX(-400px * 2);
-    -webkit-transform: translateX(-400px * 2);
-    -moz-transform: translateX(-400px * 2);
-    -ms-transform: translateX(-400px * 2);
-    -o-transform: translateX(-400px * 2);
-}
-  100% {
-    transform: translateX(0);
-  }
-}
-
-// additional styling
 body {
-  font-family: sans-serif;
+  background: #212123;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-#slider {
-  margin: 0 auto;
+img {
+  display: block;
+  max-width: 90%;
+  height: 80%;
+  object-fit: cover;
 }
 
-// in case images break:
-
-.slide:nth-child(1) {
-  background: #c69;
+.conteudo-geral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slide:nth-child(2) {
-  background: wheat;
+.conteudo-geral-sliderGeral {
+  --larguraDoItem: 120px;
+  --alturaDoItem: 100px;
+  width: var(--larguraDoItem);
+  height: 150px;
+  perspective: 1000px;
 }
 
-.slide:nth-child(3) {
-  background: #eee;
+.sliderGeral {
+  --rotatey: 0;
+  font-size: 4rem;
+  position: relative;
+  transform: rotatey(var(--rotatey));
+  transform-style: preserve-3d;
+  user-select: none;
+  cursor: grab;
+}
+
+.sliderGeral-card {
+  opacity: 0.97;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: opacity 0.5s;
+}
+
+.sliderGeral-card:hover {
+  opacity: 1;
+}
+.sliderGeral-card h1 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.sliderGeral,
+.sliderGeral-card {
+  width: 100%;
+  height: 100%;
+}
+
+.sliderGeral-card:nth-child(1) {
+  --rotatey: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #0093e9, #80d0c7);
+}
+
+.sliderGeral-card:nth-child(2) {
+  --rotatey: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #00dbde, #fc00ff);
+}
+
+.sliderGeral-card:nth-child(3) {
+  --rotatey: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #50d990, #d4d054);
+}
+.sliderGeral-card:nth-child(4) {
+  --rotatey: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #cf91ff, #5782f5);
+}
+
+.sliderGeral-card:nth-child(5) {
+  --rotate: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #642b73, #c6426e);
+}
+
+.sliderGeral-card:nth-child(6) {
+  --rotatey: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #d9afd9, #97d9e1);
+}
+.sliderGeral-card:nth-child(7) {
+  --rotatey: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #d9afd9, #97d9e1);
+}
+.sliderGeral-card:nth-child(8) {
+  --rotatey: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #d9afd9, #97d9e1);
+}
+.sliderGeral-card:nth-child(9) {
+  --rotatey: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #d9afd9, #97d9e1);
+}
+.sliderGeral-card:nth-child(10) {
+  --rotatey: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #d9afd9, #97d9e1);
+}
+.sliderGeral-card:nth-child(11) {
+  --rotatey: 0;
+  transform: rotatey(var(--rotatey)) translatez(var(--tz));
+  background: linear-gradient(-229deg, #d9afd9, #97d9e1);
+}
+
+@media screen and (min-width: 576px) {
+  .conteudo-geral-sliderGeral {
+    --larguraDoItem: 250px;
+    --alturaDoItem: 200px;
+  }
 }

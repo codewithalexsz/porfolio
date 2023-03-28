@@ -21,16 +21,16 @@ padding: 0 3px;
 .background-header {
     // RESPONSIVE QUERY
     @include devices (tablet) {
-        height: 15vh;
+        height: 270px;
     }
     @include devices (mobile) {
         height: 13vh;
     }
 
-
-    background-color:rgb(227, 192, 223) ;
-    height: 30vh;
-    display: flex;
+    
+    background-color:rgb(255, 255, 255) ;
+    height: 250px;
+    
 }
 
 
@@ -58,7 +58,7 @@ padding: 0 3px;
     border: 5px solid rgb(255, 255, 255);
     border-radius: 100%;
     position: absolute;
-    top: 42%;
+    top: 53%;
     left: 4%;
 .profile-bio{
     
