@@ -1,130 +1,40 @@
 
 
+.tech-slideshow {
+  height: 250px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
 
-.background-header img {
-    
-    max-width: 90%;
-    height: 80%;
-    object-fit: cover;
+.tech-slideshow > div {
+  height: 250px;
+  width: 290%;
+  background: url(https://user-images.githubusercontent.com/55211588/229314417-7e17d1d2-852c-4a03-b9f2-92fcc38369c2.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 12s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 15s linear infinite;
+}
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
+}
+
+@keyframes moveSlideshow {
+100% { 
+    transform: translateX(-66.6666%);  
   }
-  
-  .conteudo-geral {
-    display: flex;
-    
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 180px;
-    
-  }
-  
-  .conteudo-geral-sliderGeral {
-    --larguraDoItem: 200px;
-    --alturaDoItem: 200px;
-    width: var(--larguraDoItem);
-    height: var(--alturaDoItem);
-    position: relative;
-    perspective: 1000px;
-  }
-  
-  .sliderGeral {
-    --rotatey: 0;
-    font-size: 4rem;
-    
-    position: relative;
-    transform: rotatey(var(--rotatey));
-    transform-style: preserve-3d;
-    user-select: none;
-    cursor: grab;
-  }
-  
-  .sliderGeral-card {
-    opacity: 0.97;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    transition: opacity 0.5s;
-  }
-  
-  .sliderGeral-card:hover {
-    opacity: 1;
-  }
-  .sliderGeral-card h1 {
-    color: #fff;
-    font-size: 1.8rem;
-  }
-  
-  .sliderGeral,
-  .sliderGeral-card {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .sliderGeral-card:nth-child(1) {
-    --rotatey: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #0093e9, #80d0c7);
-  }
-  
-  .sliderGeral-card:nth-child(2) {
-    --rotatey: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #00dbde, #fc00ff);
-  }
-  
-  .sliderGeral-card:nth-child(3) {
-    --rotatey: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #50d990, #d4d054);
-  }
-  .sliderGeral-card:nth-child(4) {
-    --rotatey: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #cf91ff, #5782f5);
-  }
-  
-  .sliderGeral-card:nth-child(5) {
-    --rotate: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #642b73, #c6426e);
-  }
-  
-  .sliderGeral-card:nth-child(6) {
-    --rotatey: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #d9afd9, #97d9e1);
-  }
-  .sliderGeral-card:nth-child(7) {
-    --rotatey: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #d9afd9, #97d9e1);
-  }
-  .sliderGeral-card:nth-child(8) {
-    --rotatey: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #d9afd9, #97d9e1);
-  }
-  .sliderGeral-card:nth-child(9) {
-    --rotatey: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #d9afd9, #97d9e1);
-  }
-  .sliderGeral-card:nth-child(10) {
-    --rotatey: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #d9afd9, #97d9e1);
-  }
-  .sliderGeral-card:nth-child(11) {
-    --rotatey: 0;
-    transform: rotatey(var(--rotatey)) translatez(var(--tz));
-    background: linear-gradient(-229deg, #d9afd9, #97d9e1);
-  }
-  
-  @media screen and (min-width: 768px) {
-    .conteudo-geral-sliderGeral {
-      --larguraDoItem: 120px;
-      --alturaDoItem: 120px;
-    }
-  }
+}

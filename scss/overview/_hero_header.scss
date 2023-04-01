@@ -21,14 +21,14 @@ padding: 0 3px;
 .background-header {
     // RESPONSIVE QUERY
     @include devices (tablet) {
-        height: 270px;
+        height: 220px;
     }
     @include devices (mobile) {
         height: 13vh;
     }
 
     
-    background-color:rgb(255, 255, 255) ;
+    background-color:rgb(202, 196, 196) ;
     height: 250px;
     
 }
