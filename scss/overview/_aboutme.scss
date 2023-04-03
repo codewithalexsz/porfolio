@@ -12,7 +12,7 @@
     // RESPONSIVE QUERY
     @include devices (mobile) {
         flex-direction: column;
-        padding: 50px 15px;
+        padding: 30px 15px;
         gap: 10px;
         text-align: center;
         .sec-title{

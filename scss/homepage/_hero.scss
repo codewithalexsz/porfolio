@@ -2,6 +2,12 @@
 @use '../globals/' as *;
 @use '../breakpoints/' as *;
 
+
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+
 // Main SECTION
 .main-index {
     display: flex;

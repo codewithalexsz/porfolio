@@ -12,6 +12,12 @@
     gap: 5rem;
     padding-bottom: 15rem;
 }
+.proj-reversedcard  {
+    flex-direction: row-reverse;
+    @include devices (mobile) {
+        flex-direction: column !important;
+    }
+}
 .project-card {
     border-radius: $border-radius-button;
     -webkit-border-radius: $border-radius-button;
@@ -85,6 +91,8 @@
 
 
 }
+
+
 
 .project-sample {
     background-color: hsla(0,0%,46%,.2);

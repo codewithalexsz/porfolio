@@ -11,7 +11,8 @@
             }
             ul{
                 display: flex;
-                gap: 15px;
+                gap: 16px;
+                margin-right: 10px;
                 
                 li{
                     a {
@@ -25,12 +26,12 @@
             .header-btn {
                 font-size: 0.7rem;
                 width: 97px;
-                padding: 8px 0;
+                padding: 8px 0 !important;
             }
         }
         
         .header-btn{
-            border: 1.5px solid white;
+            border: 1.5px solid rgb(85, 83, 83);
             border-radius: 0.3rem;
             -webkit-border-radius: 0.3rem;
             -moz-border-radius: 0.3rem;

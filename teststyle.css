@@ -1,7 +1,7 @@
 
 
 .tech-slideshow {
-  height: 250px;
+  height: 200px;
   width: 90%;
   margin: 0 auto;
   position: relative;
@@ -10,7 +10,7 @@
 }
 
 .tech-slideshow > div {
-  height: 250px;
+  height: 200px;
   width: 290%;
   background: url(https://user-images.githubusercontent.com/55211588/229314417-7e17d1d2-852c-4a03-b9f2-92fcc38369c2.jpg);
   position: absolute;
@@ -26,7 +26,7 @@
 .tech-slideshow .mover-2 {
   opacity: 0;
   transition: opacity 0.5s ease-out;
-  background-position: 0 -200px;
+  background-position: 0 -100px;
   animation: moveSlideshow 15s linear infinite;
 }
 .tech-slideshow:hover .mover-2 {
