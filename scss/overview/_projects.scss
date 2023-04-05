@@ -169,4 +169,29 @@ img{
     display: flex;
     gap: 1rem;
     margin: 0 auto;
+    .sourcecode {
+        a{
+            color: black;
+            i{
+                margin-left: 5px;
+                color: black;
+                :hover {
+                    
+                }
+            }
+        }
+    }
+
+    .liveview{
+        a{
+            color: black;
+            i{
+                margin-left: 5px;
+                color: black;
+                :hover {
+                    
+                }
+            }
+        }
+    }
 }

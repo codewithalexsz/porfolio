@@ -89,6 +89,8 @@
         -o-transform: translateX(0%);
     }
     
+    .Socials {
+
     .link-icon{
         color: $background-colour-blue;
         font-size: 27px !important;
@@ -97,7 +99,7 @@
         left: 18px;
         position: absolute;
     }
-    
+}
     .link-title{
         color: rgb(161, 114, 52);
         transform: translateX(100%);
