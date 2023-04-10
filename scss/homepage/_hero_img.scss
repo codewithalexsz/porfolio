@@ -35,23 +35,21 @@
         width: 18rem;
         height: 18rem;
     }
-
-
     @include bgcolour;
-   @include testbgimg;
-   webkit-animation: morph 8s ease-in-out infinite;
-    animation: morph 8s ease-in-out infinite;
-border: 3px solid #2d2e32;
-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-height: 25rem;
-position: relative;
-transition: all 1s ease-in-out;
-width: 25rem;
-    
+    @include testbgimg;
+    webkit-animation: morph 11s ease-in-out infinite;
+    animation: morph 11s ease-in-out infinite;
+    border: 3px solid #2d2e32;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    height: 25rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 25rem;
+    -webkit-animation: morph 11s ease-in-out infinite;
 }
 
 .floating-lang{
-    animation: rotate 5s linear infinite;
+    animation: rotate 11s linear infinite;
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
