@@ -114,6 +114,9 @@ img{
     -moz-border-radius: 1.7rem;
     -ms-border-radius: 1.7rem;
     -o-border-radius: 1.7rem;
+    &:hover {
+        scale: 1.02;
+    }
 }
 }
 
